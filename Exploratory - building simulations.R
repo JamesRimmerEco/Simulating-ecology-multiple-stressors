@@ -58,7 +58,6 @@ sim_fun_1 <- function(ngroup = 5, nrep = 12, b0 = 15, b1 = 1.2, b2 = 2.7, b3 = -
   
 sim_fun_1()
 
-
 simulations_1 <- replicate(1e3, sim_fun_1(), simplify = F)
 
 simulations_1 %>% 
@@ -67,8 +66,6 @@ simulations_1 %>%
   ggplot( aes(estimate) ) +
   geom_density(fill = "blue", alpha = .5) + 
   geom_vline( xintercept = -0.05)
-
-
 
 
 
